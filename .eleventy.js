@@ -15,9 +15,7 @@ module.exports = function(eleventyConfig) {
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
     templateFormats: ["md", "njk", "html"],
-    pathPrefix: "/mindechoes/", // VERY IMPORTANT for GitHub Pages
-    // Add this to avoid folder-style URLs:
+    pathPrefix: "/mindechoes/", // Very Important for GitHub Pages
     passthroughFileCopy: true,
-    format: "html"
   };
 };
