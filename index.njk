@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind Echoes</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧠 Mind Echoes</h1>
+      <p class="tagline">Echoes of thoughts, captured in time.</p>
+    </header>
+
+    <section class="posts">
+      <h3>Recent Thoughts</h3>
+      <ul class="post-list">
+        {% for post in collections.post | reverse %}
+          <li class="post-item">
+            <a href="{{ post.url }}" class="post-link">
+              <span class="post-title">{{ post.data.title }}</span>
+              <span class="post-date">{{ post.date | date("yyyy-MM-dd") }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

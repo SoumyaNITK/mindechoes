@@ -1,0 +1,17 @@
+{
+  "name": "mindechoes",
+  "version": "1.0.0",
+  "description": "Echoes of thoughts, captured in time.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "luxon": "^3.6.1"
+  },
+  "keywords": []
+}

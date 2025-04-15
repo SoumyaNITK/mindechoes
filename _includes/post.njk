@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ title }} - Mind Echoes</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧠 Mind Echoes</h1>
+      <p class="tagline">Echoes of thoughts, captured in time.</p>
+    </header>
+
+    <article>
+      <h1>{{ title }}</h1>
+      <p class="date">{{ date | date("yyyy-MM-dd") }}</p>
+      <div class="content">
+        {{ content | safe }}
+      </div>
+    </article>
+
+    <a href="/" class="go-back">← Go Back</a>
+  </div>
+</body>
+</html>
