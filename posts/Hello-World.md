@@ -1,7 +1,8 @@
 ---
 title: Hello World
+date: 2024-04-16
 layout: post.njk
-date: 2025-04-01
+permalink: "posts/Hello-World.html"
 ---
 
-Welcome to the first post of **Mind Echoes**! This is where your thoughts come alive.
+This is your very first post on **Mind Echoes**!
