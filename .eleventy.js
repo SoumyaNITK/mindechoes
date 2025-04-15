@@ -1,14 +1,8 @@
-const { DateTime } = require("luxon");
-
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("css");  // ✅ add this line
-
+  // Date filter
+  const { DateTime } = require("luxon");
   eleventyConfig.addFilter("date", (value, format = "yyyy-MM-dd") => {
     return DateTime.fromJSDate(value).toFormat(format);
-  });
-
-  eleventyConfig.addCollection("post", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("posts/*.md");
   });
 
   return {
@@ -18,7 +12,12 @@ module.exports = function(eleventyConfig) {
       data: "_data",
       output: "_site"
     },
+    htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk"
+    templateFormats: ["md", "njk", "html"],
+    pathPrefix: "/mindechoes/", // VERY IMPORTANT for GitHub Pages
+    // Add this to avoid folder-style URLs:
+    passthroughFileCopy: true,
+    format: "html"
   };
 };
