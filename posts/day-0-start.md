@@ -1,5 +1,5 @@
 ---
-title: "Day-0 : Start"
+title: "Day-0 : The Promise I Made Myself"
 date: 2025-06-14
 layout: post.njk
 ---
