@@ -17,5 +17,5 @@ Whatever happens… thank you, me, for showing up.
 
 Let’s talk more often.
 
-— Gudu
+— Gudu🥰
 
