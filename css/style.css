@@ -1,0 +1,142 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00ffff;
+}
+
+.tagline {
+  font-style: italic;
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+
+/* Post List */
+.posts h3 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #00ffff;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.post-list {
+  list-style: none;
+}
+
+.post-item {
+  margin-bottom: 1rem;
+}
+
+.post-link {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.post-link:hover {
+  background-color: rgba(0, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.post-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+
+/* Article Page */
+article h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #00ffff;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  margin-bottom: 1.5rem;
+}
+
+.content p,
+.content ul,
+.content ol {
+  margin-bottom: 1rem;
+}
+
+.content a {
+  color: #00ffff;
+  text-decoration: underline;
+}
+
+/* Go Back Link */
+.go-back {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #00ffff;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.go-back:hover {
+  background-color: #00ffff;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .post-link {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-date {
+    margin-top: 0.3rem;
+  }
+}
