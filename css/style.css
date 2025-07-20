@@ -139,21 +139,20 @@ article h1 {
   .post-date {
     margin-top: 0.3rem;
   }
-/* Make the logo clickable without looking like a link */
 .logo {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none !important;
+  color: inherit !important;
   font-weight: bold;
   font-size: 1.8em;
   cursor: pointer;
 }
 
-.logo:visited {
-  color: inherit;
+.logo:visited,
+.logo:hover,
+.logo:focus {
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
-.logo:hover {
-  opacity: 0.8;
-}
 
 }
