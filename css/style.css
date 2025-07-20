@@ -139,20 +139,18 @@ article h1 {
   .post-date {
     margin-top: 0.3rem;
   }
-.logo {
+a.logo, 
+a.logo:visited, 
+a.logo:hover, 
+a.logo:focus, 
+a.logo:active {
   text-decoration: none !important;
   color: inherit !important;
   font-weight: bold;
   font-size: 1.8em;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
-
-.logo:visited,
-.logo:hover,
-.logo:focus {
-  text-decoration: none !important;
-  color: inherit !important;
-}
-
 
 }
